@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Katherin Yadira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Pantalla 1: Carátula -->
+    <div id="caratula" class="full-screen-bg" onclick="iniciarExperiencia()">
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Pantalla 2: Invitación Detallada -->
+    <div id="contenido" class="hidden">
+        <div class="invitacion-container">
+            <!-- Capas de imágenes según tus artes -->
+            <img src="Invitacion-03.png" class="fondo-invitacion">
+            
+            <div class="elementos-overlay">
+                <img src="Invitacion-04.png" class="header-mis15">
+                <img src="Invitacion-05.png" class="padres-padrinos">
+                <img src="Invitacion-06.png" class="nombre-quinceanera">
+                <img src="Invitacion-07.png" class="fecha-lugar">
+                
+                <!-- Botón de Ubicación con Link Real -->
+                <a href="https://maps.app.goo.gl/Cm7aBp3cwQT9ucbW6?g_st=ic" target="_blank" class="btn-ubicacion">
+                    <img src="Invitacion-08.png" alt="Ubicación">
+                </a>
+                
+                <img src="Invitacion-09.png" class="footer-obsequio">
+            </div>
+        </div>
+
+        <!-- Control de Música Flotante -->
+        <button onclick="controlMusica()" id="btn-musica">🎵</button>
+    </div>
+
+    <audio id="musica-fondo" loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

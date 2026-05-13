@@ -1,0 +1,80 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    background-color: #f4e8f0; 
+    font-family: sans-serif; 
+    overflow: hidden; 
+}
+
+/* Carátula inicial */
+.full-screen-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Invitacion-01.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 100;
+    cursor: pointer;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Contenedor de la invitación */
+#contenido {
+    width: 100%;
+    max-width: 500px; /* Tamaño típico de celular */
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+.invitacion-container {
+    position: relative;
+    width: 100%;
+}
+
+.fondo-invitacion { width: 100%; display: block; }
+
+/* Posicionamiento de los elementos sobre el fondo */
+.elementos-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.elementos-overlay img {
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+/* Botón interactivo */
+.btn-ubicacion {
+    transition: transform 0.3s;
+    display: block;
+    margin: 10px 0;
+}
+
+.btn-ubicacion:active { transform: scale(0.9); }
+
+/* Clases de utilidad */
+.hidden { display: none; opacity: 0; }
+.fade-out { opacity: 0; pointer-events: none; }
+.scroll-enabled { overflow-y: auto; }
+
+#btn-musica {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(142, 68, 173, 0.6);
+    color: white;
+    z-index: 10;
+}
